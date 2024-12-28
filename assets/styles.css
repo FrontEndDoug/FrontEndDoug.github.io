@@ -32,8 +32,65 @@ header a {
     color: #E37600;
 }
 
+header a :hover {
+    text-decoration: none;
+}
+
 /*Header Component*/
 
 main img {
     width: 400px;
+}
+
+/* HOMEPAGE HERO COMPONENT */
+
+main {
+    background-image: url('./pattern.png');
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main img {
+    width: 600px;
+    margin-bottom: 60px;
+}
+
+h1 {
+    font-family: "Inter", serif;
+    font-size: 24px;
+    font-weight: 800;
+    margin: 10px;
+}
+
+h2 {
+    font-family: "Inter", serif;
+    font-size: 64px;
+    font-weight: 800;
+    margin: 10px 0 20px 0;
+}
+
+main a{
+    font-family: "Inter", serif;
+    background-color: #E37600;
+    color: white;
+    padding: 15px 40px;
+}
+
+/* FUL WIDTH STRIP */
+
+.feature-strip {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-family: "Inter", serif;
+    font-size: 80px;
+    font-weight: 800;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    padding: 20px 0px;
+    margin-top: 20px;
 }
