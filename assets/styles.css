@@ -204,6 +204,12 @@ p {
     .feature-strip {
         font-size: 30px;
         font-weight: 800;
-
     }
+
+    /* PROJECTS */
+    .project-container {
+   
+        flex-direction: column;
+    }
+
 }
