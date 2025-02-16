@@ -50,7 +50,7 @@ main img {
     width: 400px;
 }
 
-/* HOMEPAGE HERO COMPONENT */
+
 
 main {
     background-image: url('./pattern.png');
@@ -162,4 +162,48 @@ p {
     margin-top: 20px;
 }
 
-/*FOOTER*/
+/*Media Query - Mobile*/
+
+@media (max-width: 1250px) {
+
+    /*Header Component*/
+
+    header p {
+        font-size: 16px;
+    }
+
+    header a {
+        font-size: 12px;
+    }
+
+    /* HOMEPAGE HERO COMPONENT */
+    main { 
+        height: 795px;
+    }
+
+    main img {
+        display: none;
+    }
+
+    .main-container {
+        align-items: center;
+        margin: 0;
+    }
+
+    h1 { 
+        margin: 0;
+        font-size: 20px;
+    }
+
+    main a{
+        padding: 15px 80px;
+    }
+
+    /* FUL WIDTH STRIP */
+
+    .feature-strip {
+        font-size: 30px;
+        font-weight: 800;
+
+    }
+}
