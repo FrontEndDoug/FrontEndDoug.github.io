@@ -92,6 +92,11 @@ header p {
     box-shadow: 10px 10px 22px 1px rgba(0,0,0,0.64);
 }
 
+.txt-container .button-link:hover {
+    color: white;
+    background-color: #263655;
+} 
+
 /*PROFILE CARD*/
 .profile-card {
     z-index: 2;
@@ -223,6 +228,7 @@ p {
 
 .left-split {
     padding: 2rem;
+    align-content: center;
 }
 .width-60 {
     width: 60%;
@@ -296,7 +302,6 @@ p {
     }
 
     h2 {
-        
         font-size: 36px;
         margin: 1rem;
     }
@@ -311,9 +316,103 @@ p {
         margin: 1rem;
     }
 
+    form {
+        margin: 2rem;
+    }
+
     .skills-list, .education-list, .cert-list, .membership-list  {
         
         margin-left: 2rem;
         font-size: 12px;
     }
+
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 1rem;
+        
+    }
+    .profile-card {
+        position: static;
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+    .left-hero-box {
+        display: none;
+    }
+    .right-hero-box {
+        align-items: center;
+        width: 100%;
+        margin: 1rem;
+    }
+
+    .txt-container {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin: 1rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .right-hero-box {
+        min-height: 0;
+    }
+   
+  }
+
+  /*Contact Form*/
+
+  label {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:500;
+    font-size: 24px;
+    color: #263655;
+    margin-bottom: 0.2rem;
+    display: block;
+  }
+
+  input {
+    height: 1.5rem;
+    width:  20rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border: 1px solid #263655;
+  }
+
+  form button {
+    height: 2.5rem;
+    width: 14rem;
+    background-color: hsla(220, 38%, 24%, 50%);
+    color: white;
+    padding: 0.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px solid black
+  }
+
+  form button:hover {
+    background-color: #263655;
+  }
+
+  form button:active {
+    border: 2px solid white;
+  }
+
+  textarea {
+    margin-bottom: 1rem;
+  }
+
+  .alt-colour{
+    background-color: #263655;
+    color: white;
+    margin-right: 1rem
+  }
+
+  .alt-colour h2, .alt-colour h3, .alt-colour a {
+    color: white;
+  }
+
+  .alt-colour a {
+    text-decoration: underline;
   }
